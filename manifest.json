@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-invoice-automation",
-  "version": "1.0.0",
-  "description": "Invoice-to-Cash Accelerator — Send invoices, track payments, automated reminders, payment plans, collections",
+  "version": "1.0.1",
+  "description": "Invoice-to-Cash Accelerator \u2014 Send invoices, track payments, automated reminders, payment plans, collections",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-invoice-automation",
   "homepage": "https://cortexprism.io/marketplace/plugins/invoice-automation",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "invoice_send", "description": "Send invoice to customer", "params": [] },
-    { "name": "invoice_track", "description": "Track payment status and aging", "params": [] },
-    { "name": "invoice_remind", "description": "Send automated payment reminders", "params": [] },
-    { "name": "invoice_predict_risk", "description": "Predict late payment risk", "params": [] }
+    {
+      "name": "invoice_send",
+      "description": "Send invoice to customer",
+      "params": []
+    },
+    {
+      "name": "invoice_track",
+      "description": "Track payment status and aging",
+      "params": []
+    },
+    {
+      "name": "invoice_remind",
+      "description": "Send automated payment reminders",
+      "params": []
+    },
+    {
+      "name": "invoice_predict_risk",
+      "description": "Predict late payment risk",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
